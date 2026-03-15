@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <section className="min-h-screen bg-gradient-to-br from-[#1F6F5F] to-[#2FA084] text-white flex flex-col items-center justify-center px-6">
@@ -12,19 +14,19 @@ export default function Home() {
         </p>
 
         <div className="mt-8 flex gap-4 justify-center">
-          <a
-            href="/surahs"
+          <Link
             className="px-6 py-3 rounded-xl bg-white text-black font-medium"
+            href={"/surahs"}
           >
             Start Reading
-          </a>
+          </Link>
 
-          <a
-            href="/search"
+          <Link
+            href={"/search-ayah"}
             className="px-6 py-3 rounded-xl border border-white/60"
           >
             Search Ayah
-          </a>
+          </Link>
         </div>
       </div>
 
